@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./js/main.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Cotizador de Seguros de Viaje</h1>
+    <label>Edad del viajero:</label>
+    <input type="number" id="edad" min="0" max="120">
+    <br>
+    <label>Selecciona el plan:</label>
+    <select id="plan">
+      <option value="basico">Básico</option>
+      <option value="estandar">Estándar</option>
+      <option value="premium">Premium</option>
+    </select>
+    <br>
+    <label>Cantidad de días de viaje:</label>
+    <input type="number" id="dias" min="1" max="365">
+    <br>
+    <button onclick="calcularSeguro()">Calcular</button>
+  
+    <div id="resultado"></div>
+  </body>
+</html>
